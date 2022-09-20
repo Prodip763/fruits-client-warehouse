@@ -2,6 +2,7 @@ import React from "react";
 import { Icon } from '@iconify/react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import ServiceDetails from "../../service/ServiceDetails/ServiceDetails";
 
 const Home = () => {
 
@@ -36,7 +37,7 @@ const Home = () => {
                     <p className="legend">FrutiIce</p>
                 </div>
             </Carousel>
-            
+            <ServiceDetails></ServiceDetails>
             <div className="mt-3 md:flex items-center  gap-3 ">
                 <div >
                     <img className="w-44" src={'https://img.freepik.com/free-vector/cash-delivery-concept_23-2148798392.jpg?w=900&t=st=1663653879~exp=1663654479~hmac=31e95e0c4d20ba6a4efcb249e079affdc3fb31d5f608bcc3f65ec52e69a0249f'}></img>
@@ -55,10 +56,21 @@ const Home = () => {
                 </div>
             </div>
             <div className="mt-3 " >
-                {/* <img className="rounded-lg" src={'https://img.freepik.com/free-photo/dried-organic-fruits-assortment_114579-43293.jpg?size=626&ext=jpg&ga=GA1.2.86413933.1642213775'}></img> */}
+                <div className="w-full" >
+                    <img className="rounded-xl w-2/4" src={"https://img.freepik.com/free-photo/close-up-photo-fresh-citrus-fruits-whole-half-cut_114579-64449.jpg?size=626&ext=jpg&ga=GA1.2.86413933.1642213775"}></img>
+                    <h2>PEACH</h2>
+                    <p><small>When it comes to Lemon, our mind remembers Washington automatically</small></p>
+                </div>
+                <div>
+                    <img src={"https://img.freepik.com/free-photo/tasty-ripe-sweet-healthy-blackberry_114579-11249.jpg?size=626&ext=jpg&ga=GA1.2.86413933.1642213775"}></img>
+                    <h2>AVAILABLE</h2>
+                    <p><small>Treat yourself to dishes made up of exotic fruits and cherish the eccentric taste of this fruit</small></p>
+                </div>
             </div>
         </div>
     )
 }
 
 export default Home;
+
+//style={{backgroundImage: `url("https://img.freepik.com/free-photo/close-up-photo-fresh-citrus-fruits-whole-half-cut_114579-64449.jpg?size=626&ext=jpg&ga=GA1.2.86413933.1642213775")` }}
