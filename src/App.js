@@ -10,6 +10,7 @@ import ServiceDetail from './Component/service/ServiceDetail/ServiceDetail';
 import NotFound from './Component/shared/NotFound/NotFound';
 import Login from './Component/Login/Login/Login';
 import Register from './Component/Login/Register/Register';
+import RequireAuth from './Component/shared/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/serviceDetails' element={<ServiceDetails></ServiceDetails>}></Route>
-        <Route path='/service/:serviceId' element={<ServiceDetail></ServiceDetail>}></Route>
+        <Route path='/service/:serviceId' element={<RequireAuth><ServiceDetail></ServiceDetail></RequireAuth>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
