@@ -56,17 +56,18 @@ const Home = () => {
                     <p><small>A money-back guarantee, also known as a satisfaction guarantee, is essentially a simple guarantee that, if a buyer is not satisfied with a product or service, a refund will be made.</small></p>
                 </div>
             </div>
-            <div className="mt-3  gap-2 md:flex" >
+            <h2 className="text-pink-500 text-2xl  text-center mt-2 bg-gray-600">Best Deal Forever</h2>
+            <div className="mt-3   gap-2 md:flex" >
                 <div className="containe" >
-                    <img className="rounded-xl h-full" src={"https://img.freepik.com/free-photo/close-up-photo-fresh-citrus-fruits-whole-half-cut_114579-64449.jpg?size=626&ext=jpg&ga=GA1.2.86413933.1642213775"}></img>
+                    <img className="rounded-xl  h-full" src={"https://img.freepik.com/free-photo/close-up-photo-fresh-citrus-fruits-whole-half-cut_114579-64449.jpg?size=626&ext=jpg&ga=GA1.2.86413933.1642213775"}></img>
                     <div className="centered">
                         <h2 className="text-2xl">PEACH</h2>
                         <p><small>When it comes to Lemon, our mind remembers Washington automatically</small></p>
                     </div>
                 </div>
-                <div >
-                    <div className="containe">
-                        <img className="rounded-xl  md:h-48 sm:mt" src={"https://img.freepik.com/free-photo/tasty-ripe-sweet-healthy-blackberry_114579-11249.jpg?size=626&ext=jpg&ga=GA1.2.86413933.1642213775"}></img>
+                <div className="w-full">
+                    <div className="containe ">
+                        <img className="rounded-xl w-full mt-1 md:h-48" src={"https://img.freepik.com/free-photo/tasty-ripe-sweet-healthy-blackberry_114579-11249.jpg?size=626&ext=jpg&ga=GA1.2.86413933.1642213775"}></img>
                         <div className="top-right text-green-800">
                             <h2 className="text-2xl">AVAILABLE</h2>
                             <p><small>Treat yourself to dishes made up of exotic fruits and cherish the eccentric taste of this fruit</small></p>
@@ -77,14 +78,10 @@ const Home = () => {
                             <div className="mt-8 mb-8">
                             <p className="text-xl ">50% off</p>
                             <small className="text-black">Time limited!! Only Friday to Sunday</small><br></br>
-                            <small>10AM - 12Am</small>
+                            <small>10AM - 12AM</small>
                             </div>
                         </div>
-                        {/* <img className="rounded-xl h-48 " src={"https://img.freepik.com/free-photo/tasty-ripe-sweet-healthy-blackberry_114579-11249.jpg?size=626&ext=jpg&ga=GA1.2.86413933.1642213775"}></img>
-                        <div className="top-right text-green-800">
-                            <h2 className="text-2xl">AVAILABLE</h2>
-                            <p><small>Treat yourself to dishes made up of exotic fruits and cherish the eccentric taste of this fruit</small></p>
-                        </div> */}
+                        
                     </div>
                 </div>
             </div>
@@ -94,4 +91,3 @@ const Home = () => {
 
 export default Home;
 
-//style={{backgroundImage: `url("https://img.freepik.com/free-photo/close-up-photo-fresh-citrus-fruits-whole-half-cut_114579-64449.jpg?size=626&ext=jpg&ga=GA1.2.86413933.1642213775")` }}
