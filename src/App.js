@@ -8,6 +8,8 @@ import Blog from './Component/page/Blog/Blog';
 import ServiceDetails from './Component/service/ServiceDetails/ServiceDetails';
 import ServiceDetail from './Component/service/ServiceDetail/ServiceDetail';
 import NotFound from './Component/shared/NotFound/NotFound';
+import Login from './Component/Login/Login/Login';
+import Register from './Component/Login/Register/Register';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/serviceDetails' element={<ServiceDetails></ServiceDetails>}></Route>
         <Route path='/service/:serviceId' element={<ServiceDetail></ServiceDetail>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

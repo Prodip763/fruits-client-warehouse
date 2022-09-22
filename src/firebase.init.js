@@ -19,3 +19,11 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 export default auth;
+
+
+// apiKey: "AIzaSyA8WO_EBgtGswu_8LNt9W1jJrzrNvySqgY",
+// authDomain: "fruits-warehouse-b639e.firebaseapp.com",
+// projectId: "fruits-warehouse-b639e",
+// storageBucket: "fruits-warehouse-b639e.appspot.com",
+// messagingSenderId: "559194693474",
+// appId: "1:559194693474:web:91275934bf41785d4ed63b"
