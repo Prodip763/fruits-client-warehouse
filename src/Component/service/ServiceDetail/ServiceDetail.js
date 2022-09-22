@@ -3,22 +3,18 @@ import { useParams } from "react-router-dom";
 import useDetails from "../../hooks/useDetails";
 
 const ServiceDetail = () => {
-    const [details, setDetails] = useState([]);
-    useEffect(()=>{
-        fetch('data.json')
-        .then(res => res.json())
-        .then(data => setDetails(data));
-    } ,[])
-    console.log(details);
+    // const [details] = useDetails;
+    
+   
     const { serviceId } = useParams();
     
 
     
 
     // const product = details.find(x => x._id === serviceId);
-    // // console.log(x._id);
+    // console.log(x._id);
     // if (!product) {
-    //     return <div>Product Not Found</div>
+    //      <div>Product Not Found</div>
     // }
 
     // const product = detail.find(x => x._id === serviceId);

@@ -4,9 +4,6 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 
 const Register = () => {
-    // const nameRef = useRef('')
-    // const emailRef = useRef('');
-    // const passwordRef = useRef('');
     const [
         createUserWithEmailAndPassword,
         user,
@@ -16,18 +13,18 @@ const Register = () => {
 
     const handleRegister = e => {
         e.preventDefault();
-        // const email = emailRef.current.value;
-        // const password = passwordRef.current.value;
         const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
         const confirmPassword = e.target.confirmPassword.value;
-        if(password === confirmPassword){
-            
+        if(password !== confirmPassword){
+            alert("Password didn't match")
+        }
+        else{
+            createUserWithEmailAndPassword(email, password);
         }
         
-        createUserWithEmailAndPassword(email, password);
+        
     }
 
     if (user) {
