@@ -20,6 +20,7 @@ const Header = () => {
                 <div className="flex gap-3">
                 <p className="hover:text-pink-500 hover:underline decoration-pink-500"><Link to='/home'>Home</Link></p>
                 <p className="hover:text-pink-500 hover:underline decoration-pink-500"><Link to='/blog'>Blog</Link></p>
+                <p className="hover:text-pink-500 hover:underline decoration-pink-500"><Link to='/addService'>AddService</Link></p>
                 </div>
             </div>
             {
