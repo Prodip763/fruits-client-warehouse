@@ -14,6 +14,7 @@ import RequireAuth from './Component/shared/RequireAuth/RequireAuth';
 import AddService from './Component/service/AddService/AddService'
 import ManageService from './Component/service/ManageService/ManageService';
 import UpdateService from './Component/service/UpdateService/UpdateService';
+import MyItem from './Component/service/MyItem/MyItem';
 
 function App() {
   return (
@@ -23,11 +24,12 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
-        <Route path='/serviceDetails' element={<ServiceDetails></ServiceDetails>}></Route>
+        <Route path='/serviceDetails' element={<RequireAuth><ServiceDetails></ServiceDetails></RequireAuth>}></Route>
         <Route path='/service/:serviceId' element={<RequireAuth><ServiceDetail></ServiceDetail></RequireAuth>}></Route>
         <Route path='/addService' element={<RequireAuth><AddService></AddService> </RequireAuth>}></Route>
         <Route path='/manageService' element={<RequireAuth><ManageService></ManageService></RequireAuth>}></Route>
         <Route path='/updateService/:id' element={<RequireAuth><UpdateService></UpdateService></RequireAuth>}></Route>
+        <Route path='myitem' element={<RequireAuth><MyItem></MyItem></RequireAuth>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

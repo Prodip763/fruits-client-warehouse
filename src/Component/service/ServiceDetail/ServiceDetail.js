@@ -30,7 +30,7 @@ const ServiceDetail = () => {
 
     }
     const handleProcess=()=>{
-        toast('Item added successfylly');
+        toast('Avabilable quantity update successfully');
     }
 
 
@@ -53,7 +53,7 @@ const ServiceDetail = () => {
                         </div>
                     </div>
                     <button onClick={handleProcess} className="mt-4 items-center bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">
-                    Process Checkout
+                    RESTOCK
                         </button>
                 </div>
             </div>
