@@ -30,7 +30,11 @@ const AddService = () => {
                 <input placeholder="Supplier Name" className="w-96 text-center mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1" {...register("supplierName")} />
                 <input placeholder="Quantity" className="w-96 text-center mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1" type="number" {...register("amount", { min: 18, max: 99 })} />
                 <input className="mt-4 items-center  bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded" type="submit" />
+                
             </form>
+            <div className="mx-auto mt-3 border rounded-md">
+
+            </div>
         </div>
     );
 };
