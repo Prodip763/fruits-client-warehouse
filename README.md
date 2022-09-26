@@ -1,6 +1,6 @@
 # Fruits Warehouse
 
-[Live Link ](https://fruits-warehouse-b639e.web.app/).
+[Live Link ](https://fruits-warehouse-b639e.web.app/)
 
  * This is a website for a company who buy fruits from the farmers and sell them to the shop owners all over the city.
  * This site has a home page which includes a banner and some text on it, a inventories showing six inventory items, a form to submit suggestion the company and a footer.
